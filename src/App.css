@@ -36,3 +36,159 @@
     transform: rotate(360deg);
   }
 }
+
+                        /* Mis estilos */
+
+/* Header */
+
+.header {
+  background-color: #262629;
+  padding: 30px 10px 90px 10px;
+  border-radius: 0% 0% 40px 40px;
+}
+
+.logo{
+  padding: 0px 10px 0px 10px;
+  width: 100%;
+  height: auto;
+}
+
+.buscar {
+  border-radius: 10px;
+  margin: 0px 0px 0px 0px;
+  height: 40px;
+  width: 70%;
+}
+
+.lupa {
+  width: 20px;
+  height: auto;
+}
+
+.botLupa {
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+}
+
+                                /* Destacados */
+
+/* Referencia : https://www.youtube.com/watch?v=uhP6OL0bwpY&ab_channel=midudev */
+
+.slider {
+  display: flex;
+  width: 100%;
+  
+  position: relative;
+  bottom: 60px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.slider-child {
+  width: 100%;
+  min-width: 100%;
+  scroll-snap-align: center;
+  background-color: transparent;
+}
+
+.slider-inner-child {
+  background-color: #FBFBFB;
+  height: 11rem;
+  width: 80%;
+  border-radius: 20px;
+}
+
+.img-container {
+  max-width: 50%;
+  
+  margin: 0px 20px 0px 0px;
+  
+}
+
+.slider-image {
+  max-width: 100%;
+  border-radius: 20px;
+  
+}
+
+.destacados {
+  margin: 0px 0px 0px 0px;
+}
+
+.btn-comprar {
+  margin-top: 10px ;
+  background-color: #4D4D4D;
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+
+                                          /* Submenu */
+
+.submenu-btn {
+  background-color: #BE9A57;
+  padding: 15px;
+  border-radius: 20%;
+  border: none;
+}        
+
+.sub-menu-child > p {
+  text-align: center;
+}
+
+                                          /* Nuevo */
+
+.contenedor {
+  background-color: #c4c4c4;
+  border-radius: 30px;
+}    
+
+.mini-header {
+  margin: 20px 20px 20px 20px;
+}
+
+.mini-header > button{
+  background-color: #4B9CFE;
+  border: none;
+  border-radius: 20%;
+}
+
+.slider1 {
+  display: flex;
+  overflow-x: scroll;
+  width: 100%;
+}
+
+.slider1-child {
+  max-width: 200px;
+  min-width: 200px;
+  min-height: 300px;
+  background-color: #F8F8F8;
+  border-radius: 20px;
+  margin: 10px 10px 10px 10px;
+}
+.slider1-image {
+  width: 95%;
+  height: auto;
+  margin: 4% 4% 4% 4%;
+  border-radius: 20px;
+}
+
+
+                                    /* Footer */
+
+.footer {
+  background-color: #F8F8F8;
+  min-height: 60px;
+  position: fixed;
+  width: 100%;
+  border-radius: 20px;
+  top: 92vh;
+}
+
+.footer> button {
+  background-color: transparent;
+  border: none;
+  margin: 0px 10px 0px 10px;
+}
