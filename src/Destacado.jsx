@@ -5,30 +5,30 @@ import logo from "./img/Product.jpg"
 function Destacado() {
 
 
-    window.addEventListener("load", () => {
-        const destacadosContainer = document.getElementById("scroller")
-        const destacadosContainerWidth = destacadosContainer.scrollWidth
+    // window.addEventListener("load", () => {
+    //     const destacadosContainer = document.getElementById("scroller")
+    //     const destacadosContainerWidth = destacadosContainer.scrollWidth
 
-        console.log("destacados" + destacadosContainer)
-        console.log("width" + destacadosContainerWidth)
-        console.log("left" + destacadosContainer.scrollLeft)
+    //     console.log("destacados" + destacadosContainer)
+    //     console.log("width" + destacadosContainerWidth)
+    //     console.log("left" + destacadosContainer.scrollLeft)
 
 
 
-        window.setInterval(() => {
+    //     window.setInterval(() => {
 
-            if (destacadosContainer.scrollLeft < 320) {
+    //         if (destacadosContainer.scrollLeft < 320) {
 
-                destacadosContainer.scrollTo(destacadosContainer.scrollLeft + 1, 0)
-                console.log("I was run")
-                console.log("left" + destacadosContainer.scrollLeft)
-            }
-            // if (destacadosContainer.scrollLeft !== destacadosContainerWidth) {
-            //     destacadosContainer.scrollTo(destacadosContainer.scrollLeft + 1, 0);
+    //             destacadosContainer.scrollTo(destacadosContainer.scrollLeft + 1, 0)
+    //             console.log("I was run")
+    //             console.log("left" + destacadosContainer.scrollLeft)
+    //         }
+    //         // if (destacadosContainer.scrollLeft !== destacadosContainerWidth) {
+    //         //     destacadosContainer.scrollTo(destacadosContainer.scrollLeft + 1, 0);
 
-            // }
-        }, 5)
-    })
+    //         // }
+    //     }, 5)
+    // })
 
 
     return (

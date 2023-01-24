@@ -2,31 +2,111 @@ import imagen from './img/Product.jpg'
 import catalogo from './data'
 import add from './img/add.png'
 
-function Nuevo() {
-
+function Nuevo(props) {
+    const {products, onAdd} = props
 
     let cata = catalogo.data.products
 
     const renderCard = (a, index) => {
-        
-        if (a.category=="Comedor")
-        {
+
+        if (a.category == "Comedor") {
             return (
                 <div className="slider1-child">
                     <div className='d-flex justify-content-center align-items-center'>
                         <img className='slider1-image' src={a.url} alt="" />
                     </div>
-                    <div className=''>
-                        <h3 className='mb-auto p-2'>{a.name}</h3>
-                        <h5>${a.price}</h5>
+                    <div className='container'>
+                        <div className='row'>
+                            <h3 className='mb-auto p-2 col-12'>{a.name}</h3>
+                        </div>
+                        <div className='row'>
+                            <h5 className='col-6'>${a.price}</h5>
+                            <div className='col-6 '>
+                                <button onClick={() => {
+                                    onAdd(a)
+                                    console.log("Este es el item que se manda con el onclick"+JSON.stringify(a))}} className='add-btn' ><img src={add} alt="" /></button>
+                            </div>
+
+                        </div>
+
+
                     </div>
-                    <button><img src={add} alt="" /></button>
+
                 </div>
             )
         }
-            
         
+
+
+
+    }
+
+    const renderMesa = (a, index) => {
+
+        if (a.category == "Mesas") {
+            return (
+                <div className="slider1-child">
+                    <div className='d-flex justify-content-center align-items-center'>
+                        <img className='slider1-image' src={a.url} alt="" />
+                    </div>
+                    <div className='container'>
+                        <div className='row'>
+                            <h3 className='mb-auto p-2 col-12'>{a.name}</h3>
+                        </div>
+                        <div className='row'>
+                            <h5 className='col-6'>${a.price}</h5>
+                            <div className='col-6 '>
+                                <button onClick={() => {
+                                    onAdd(a)
+                                    console.log("Este es el item que se manda con el onclick"+JSON.stringify(a))}} className='add-btn' ><img src={add} alt="" /></button>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            )
+        }
         
+
+
+
+    }
+
+    const renderCel = (a, index) => {
+
+        if (a.category == "Porta Celulares") {
+            return (
+                <div className="slider1-child">
+                    <div className='d-flex justify-content-center align-items-center'>
+                        <img className='slider1-image' src={a.url} alt="" />
+                    </div>
+                    <div className='container'>
+                        <div className='row'>
+                            <h3 className='mb-auto p-2 col-12'>{a.name}</h3>
+                        </div>
+                        <div className='row'>
+                            <h5 className='col-6'>${a.price}</h5>
+                            <div className='col-6 '>
+                                <button onClick={() => {
+                                    onAdd(a)
+                                    console.log("Este es el item que se manda con el onclick"+JSON.stringify(a))}} className='add-btn' ><img src={add} alt="" /></button>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            )
+        }
+        
+
+
+
     }
 
 
@@ -38,6 +118,12 @@ function Nuevo() {
             </div>
             <div className="slider1">
                 {cata.map(renderCard)}
+            </div>
+            <div className="slider1">
+                {cata.map(renderMesa)}
+            </div>
+            <div className="slider1">
+                {cata.map(renderCel)}
             </div>
             <img src="./img/Product.heic" alt="" />
         </div >
