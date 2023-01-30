@@ -137,7 +137,7 @@
   text-align: center;
 }
 
-                                          /* Nuevo */
+                                /* Nuevo */
 
 .contenedor {
   background-color: #c4c4c4;
@@ -181,6 +181,10 @@
   border: none;
 }
 
+.cantidad {
+  /* font-size: large; */
+}
+
 
                                     /* Footer */
 
@@ -197,4 +201,45 @@
   background-color: transparent;
   border: none;
   margin: 0px 10px 0px 10px;
+}
+
+                      /* Carrito */
+
+.cart-mother{
+  /* background-color: red; */
+}
+
+.cartElement-mother {
+  margin: 10px 0px 0px 0px;
+  padding-bottom: 10px;
+  border-bottom: solid 2px #E6E6E6;
+  
+}
+
+.carrito-title {
+  color: #BE9A57 ;
+  padding: 10px 0px 0px 0px;
+  text-align: left;
+}
+
+.img-cartElement {
+  width: 100%;
+  height: auto;
+}
+
+.item-name{
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: bolder;
+}
+
+.cart-btn {
+  background-color: #BE9A57;
+  border: none;
+  border-radius: 20%;
+  padding: 8px 15px 8px 15px;
+}
+
+.pay-btn{
+  margin-bottom: 250px;
 }

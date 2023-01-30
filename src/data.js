@@ -13,7 +13,8 @@ export default {
                 "category": "Comedor",
                 "name": "Servilletero",
                 "price":"20.000",
-                "url": "https://vickywebsite.s3.amazonaws.com/servilletero-22x22x7-45000a50000.jpg"
+                "url": "https://vickywebsite.s3.amazonaws.com/servilletero-22x22x7-45000a50000.jpg",
+                
             },
             {
                 "id": "0003",
